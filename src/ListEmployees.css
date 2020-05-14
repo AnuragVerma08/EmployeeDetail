@@ -1,0 +1,124 @@
+/* ListEmployees */
+
+.list-employees {
+  padding-top: 1px;
+}
+
+.list-employees-top {
+  width: 100%;
+  top: 0;
+  border-bottom: 1px solid #d5d8df;
+  display: flex;
+}
+
+.search-employees {
+  width: 100%;
+  padding: 20px 20px 20px 60px;
+  background-image: url('./icons/search.svg');
+  background-repeat: no-repeat;
+  background-position: 20px center;
+  background-size: 1.2em;
+  font-size: 1.2em;
+  border: 0;
+  outline: none;
+}
+
+.add-employee {
+  display: block;
+  width: 73px;
+  background: white;
+  background-image: url('./icons/person-add.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 28px;
+  font-size: 0;
+}
+
+.showing-employees {
+  text-align: center;
+  margin: 20px 0;
+}
+.showing-employees button {
+  color: blue;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: inherit;
+}
+
+.employee-list {
+  width: 100%;
+  height: 27.5rem;
+  overflow-y: scroll;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.employee-list-item {
+  padding: 20px;
+  background: white;
+  display: flex;
+}
+
+@media (min-width: 600px) {
+  .employee-list-item {
+    margin: 20px;
+    border: 1px solid #d5d8df;
+    border-radius: 4px;
+  }
+}
+
+
+.employee-details {
+  padding-left: 20px;
+  border-left: 1px solid #eee;
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.employee-details p {
+  margin: 0;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.employee-remove, .employee-update {
+  padding-left: 20px;
+  align-self: center;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  background-size: 100% 100%;
+  border: 0;
+  color: black;
+  font-size: 0;
+  vertical-align: middle;
+  cursor: pointer;
+  outline: none;
+}
+
+.employee-remove {
+  background-image: url('./icons/cancel.svg');
+}
+
+.employee-update {
+    background-image: url('./icons/pencil-edit-button.svg');
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin-top: 10px;
+  width: 70%;
+}
+th, td {
+  padding: 15px;
+  text-align: center;
+}

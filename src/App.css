@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.header {
+  overflow: hidden;
+  background-color: #0e0101;
+  color: aliceblue;
+  font-size: larger;
+  font-weight: bold;
+  padding: 5px 15px;
+}
